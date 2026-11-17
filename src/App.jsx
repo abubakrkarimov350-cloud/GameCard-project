@@ -1,30 +1,14 @@
-import GameCard from "./GameCard";
+import GameCard from "./GameCard.jsx";
 import "./index.css";
 
 function App() {
   return (
-    <div className="container">
-      <h1>🎮 Sevimli o'yinlarim</h1>
+    <div>
+      <h1>Sevimli o'yinlarim 🎮</h1>
 
-      <div className="game-list">
-        <GameCard
-          name="Minecraft"
-          emoji="⛏️"
-          rating="9.5"
-        />
-
-        <GameCard
-          name="PUBG Mobile"
-          emoji="🔫"
-          rating="9.2"
-        />
-
-        <GameCard
-          name="Roblox"
-          emoji="🎮"
-          rating="9.8"
-        />
-      </div>
+      <GameCard name="Minecraft" emoji="⛏️" rating="9.5" />
+      <GameCard name="PUBG" emoji="🔫" rating="9.2" />
+      <GameCard name="Roblox" emoji="🎮" rating="9.8" />
     </div>
   );
 }
